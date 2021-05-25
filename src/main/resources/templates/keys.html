@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/css/style.css" />
+</head>
+<body>
+<div layout:fragment="content">
+    <h3>Public:</h3>
+    <p th:text="${public}"></p>
+    <h3>Private:</h3>
+    <p th:text="${private}"></p>
+</div>
+</body>
+</html>

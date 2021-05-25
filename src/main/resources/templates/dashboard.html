@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="default">
+    <head>
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="/css/style.css" />
+<!--        <style>-->
+<!--            div {-->
+<!--                margin-top: 20%;-->
+<!--            }-->
+<!--        </style>-->
+    </head>
+    <body>
+        <div layout:fragment="content">
+            <h3 th:inline="text">Hello [[${#httpServletRequest.remoteUser}]]!</h3>
+            <h3>This is your Admin Dashboard [[${txt1}]]</h3>
+        </div>
+    </body>
+</html>
